@@ -63,21 +63,10 @@ output:
           description: |
             Groovy Map containing sample information
             e.g. `[ id:'test', single_end:false ]`
-      - "*.bed":
+      - "*.bed.gz":
           type: file
-          description: bedMethyl output file(s)
-          pattern: "*.bed"
-          ontologies: []
-  bedgraph:
-    - - meta:
-          type: map
-          description: |
-            Groovy Map containing sample information
-            e.g. `[ id:'test', single_end:false ]`
-      - "*.bedgraph":
-          type: file
-          description: bedgraph output files
-          pattern: "*.bedgraph"
+          description: bgzf-compresse bedMethyl output file(s)
+          pattern: "*.bed.gz"
           ontologies: []
   log:
     - - meta:
@@ -102,3 +91,4 @@ authors:
   - "@fellen31"
 maintainers:
   - "@fellen31"
+  - "@jkh00"
